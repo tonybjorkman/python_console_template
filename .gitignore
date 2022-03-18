@@ -1,3 +1,6 @@
+# Config file storing password
+config.ini
+
 # Sqlite db
 *.db
 
