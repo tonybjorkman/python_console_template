@@ -9,5 +9,9 @@ class Cat(Base):
     id = Column(Integer,primary_key=True)
     name = Column(String(20))
     age = Column(Integer)
+    weight = Column(Integer)
+
+    def __repr__(self):
+        return "<Cat(name='%s',age='%s')>" % (self.name,self.age)
 
 
