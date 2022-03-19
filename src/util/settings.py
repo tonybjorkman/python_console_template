@@ -11,5 +11,3 @@ def load_settings():
     return config 
 
 config = load_settings()
-
-pass

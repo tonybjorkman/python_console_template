@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session
 from sqlalchemy.orm import sessionmaker
 from db.models import Base
-from app.settings import config
+from util.settings import config
 
 conn_str = config.get('database', 'conn_string')
 engine = create_engine(conn_str)
