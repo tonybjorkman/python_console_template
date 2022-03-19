@@ -1,6 +1,7 @@
 from sqlalchemy.orm import sessionmaker
 import sys
 import os
+from util.logger import logger
 #sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 #print(sys.path)
 from db import Cat,session
@@ -17,6 +18,7 @@ from db import Cat,session
 #session = db()
 def run():
     # adds example cat to db
+    logger.info('creating cat')
     cat_one = Cat(name="bad cat")
     session.add(cat_one)
     session.commit()
